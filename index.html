@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="layout.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,22 @@
 </head>
 <body>
     <h1>Favorite Programming Language</h1>
-    <form action="/fav-program-url" method="post">
-        <fieldset>
-            <legend>Add User</legend>
+    <form id="form" action="/fav-program-url" method="post">
+        <fieldset id="fields">
+            <legend id="leg">Add User</legend>
 
             <div>
-                <label for="first-name">First Name</label>
+                <label for="first-name">First Name</label><br>
                 <input type="text" id="firstName" name="first_name">
             </div>
 
             <div>
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last Name</label><br>
                 <input type="text" id="lastName" name="last_name">
             </div>
 
             <div>
-                <label for="email">Email</label>
+                <label for="email">Email</label><br>
                 <input type="email" id="email"  name="email_addres">
             </div>
 
@@ -34,33 +35,32 @@
                     <option value="instructor">Instructor</option>
                     <option value="guest">Guest</option>
                 </select>
-            <p>Choose your favorite programming language:</p>
+
+                    <label for="current-date">Date</label>
+                    <input type="date" id="current-date" name="current-date">
+
+
 
             <div>
+                <p>Choose your favorite language:</p>
                 <input type="radio">HTML
                 <input type="radio">CSS
                 <input type="radio">JavaScript
             </div>
 
             <div>
-                <label for="comments">Comments</label>
+                <label for="comments">Comments</label><br>
                 <textarea id="comments" name="comments"></textarea>
             </div>
 
-            <div>
-                <label for="current-date">Date</label>
-                <input type="date" id="current-date" name="current-date">
-            </div>
 
-            <div>
-                <label for="newsletter">Signup for newsletter</label>
+
+            <div class="checks">
                 <input type="checkbox" id="newsletter" name="newsletter">
-            </div>
-
-            <div>
-                <label for="terms">Agree to our Terms & Conditions</label>
+                <label for="newsletter">Sign up</nav> for news</label>
                 <input type="checkbox" id="terms" name="terms">
-            </div>
+                <label for="terms">Agree to Terms</label>
+               <br></br>
 
             <div>
                 <button type="submit">Submit</button>

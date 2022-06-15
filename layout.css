@@ -1,0 +1,27 @@
+#fields {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-bottom:30px;
+    padding-left: 30px;
+    width: 50%;
+
+}
+#leg {
+    text-align: justify;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.checks {
+    font-size:12px;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+html {
+    background-color: grey;
+}
